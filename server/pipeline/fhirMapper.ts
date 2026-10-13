@@ -80,7 +80,7 @@ export function buildFHIRCondition(cond: Condition, patientId: string) {
       coding: [
         {
           system: 'http://terminology.hl7.org/CodeSystem/condition-clinical',
-          code: cond.clinicalStatus || 'active',
+          code: cond.clinical_status || 'active',
         },
       ],
     },

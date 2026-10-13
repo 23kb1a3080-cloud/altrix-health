@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx server/local.ts",
     "dev:frontend": "npm run dev --prefix frontend",
-    "build": "npm run build --prefix frontend",
+    "postinstall": "npm --prefix frontend install",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
     "start": "tsx server/local.ts"
   },
   "dependencies": {
