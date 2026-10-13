@@ -1,0 +1,500 @@
+{
+  "hemoglobin": {
+    "loinc": "718-7",
+    "name": "Hemoglobin",
+    "canonical_unit": "g/dL",
+    "aliases": ["hb", "hgb", "haemoglobin", "blood hemoglobin"],
+    "ranges": {
+      "male": {"min": 13.8, "max": 17.2, "critical_low": 7.0, "critical_high": 20.0},
+      "female": {"min": 12.1, "max": 15.1, "critical_low": 7.0, "critical_high": 20.0},
+      "default": {"min": 12.0, "max": 17.0, "critical_low": 7.0, "critical_high": 20.0}
+    },
+    "description": "Carries oxygen from lungs to body tissues"
+  },
+  "rbc_count": {
+    "loinc": "789-8",
+    "name": "RBC Count",
+    "canonical_unit": "10^6/µL",
+    "aliases": ["rbc", "red blood cell count", "erythrocyte count"],
+    "ranges": {
+      "male": {"min": 4.5, "max": 5.9, "critical_low": 2.5, "critical_high": 7.0},
+      "female": {"min": 4.1, "max": 5.1, "critical_low": 2.5, "critical_high": 7.0},
+      "default": {"min": 4.1, "max": 5.9, "critical_low": 2.5, "critical_high": 7.0}
+    },
+    "description": "Number of red blood cells per microliter"
+  },
+  "wbc_count": {
+    "loinc": "6690-2",
+    "name": "Total Leucocyte Count (WBC)",
+    "canonical_unit": "/µL",
+    "aliases": ["wbc", "tlc", "white blood cell count", "total leucocyte count", "leukocyte count"],
+    "ranges": {
+      "default": {"min": 4000.0, "max": 11000.0, "critical_low": 2000.0, "critical_high": 30000.0}
+    },
+    "description": "Cells fighting infections and immune responses"
+  },
+  "platelet_count": {
+    "loinc": "777-3",
+    "name": "Platelet Count",
+    "canonical_unit": "/µL",
+    "aliases": ["platelets", "plt", "thrombocyte count"],
+    "ranges": {
+      "default": {"min": 150000.0, "max": 450000.0, "critical_low": 50000.0, "critical_high": 1000000.0}
+    },
+    "description": "Cell fragments that help blood clot"
+  },
+  "packed_cell_volume": {
+    "loinc": "20570-8",
+    "name": "Packed Cell Volume (PCV / Hematocrit)",
+    "canonical_unit": "%",
+    "aliases": ["pcv", "hematocrit", "hct"],
+    "ranges": {
+      "male": {"min": 40.0, "max": 52.0, "critical_low": 20.0, "critical_high": 60.0},
+      "female": {"min": 36.0, "max": 48.0, "critical_low": 20.0, "critical_high": 60.0},
+      "default": {"min": 36.0, "max": 52.0, "critical_low": 20.0, "critical_high": 60.0}
+    },
+    "description": "Percentage of whole blood volume made up of red cells"
+  },
+  "mcv": {
+    "loinc": "787-2",
+    "name": "Mean Corpuscular Volume (MCV)",
+    "canonical_unit": "fL",
+    "aliases": ["mcv"],
+    "ranges": {
+      "default": {"min": 80.0, "max": 100.0, "critical_low": 65.0, "critical_high": 120.0}
+    },
+    "description": "Average volume of a single red blood cell"
+  },
+  "mch": {
+    "loinc": "785-6",
+    "name": "Mean Corpuscular Hemoglobin (MCH)",
+    "canonical_unit": "pg",
+    "aliases": ["mch"],
+    "ranges": {
+      "default": {"min": 27.0, "max": 33.0, "critical_low": 20.0, "critical_high": 40.0}
+    },
+    "description": "Average amount of hemoglobin inside a red cell"
+  },
+  "mchc": {
+    "loinc": "786-4",
+    "name": "Mean Corpuscular Hemoglobin Concentration (MCHC)",
+    "canonical_unit": "g/dL",
+    "aliases": ["mchc"],
+    "ranges": {
+      "default": {"min": 32.0, "max": 36.0, "critical_low": 26.0, "critical_high": 40.0}
+    },
+    "description": "Average concentration of hemoglobin in red cells"
+  },
+  "rdw": {
+    "loinc": "788-0",
+    "name": "Red Cell Distribution Width (RDW)",
+    "canonical_unit": "%",
+    "aliases": ["rdw", "rdw-cv"],
+    "ranges": {
+      "default": {"min": 11.5, "max": 14.5, "critical_low": 9.0, "critical_high": 25.0}
+    },
+    "description": "Variation in red blood cell volume and size"
+  },
+  "neutrophils": {
+    "loinc": "770-8",
+    "name": "Neutrophils",
+    "canonical_unit": "%",
+    "aliases": ["neutrophils", "polymorphs", "segs"],
+    "ranges": {
+      "default": {"min": 40.0, "max": 75.0, "critical_low": 20.0, "critical_high": 90.0}
+    },
+    "description": "White blood cells that fight bacterial infections"
+  },
+  "lymphocytes": {
+    "loinc": "736-9",
+    "name": "Lymphocytes",
+    "canonical_unit": "%",
+    "aliases": ["lymphocytes", "lymphs"],
+    "ranges": {
+      "default": {"min": 20.0, "max": 45.0, "critical_low": 10.0, "critical_high": 70.0}
+    },
+    "description": "Immune cells fighting viral infections"
+  },
+  "monocytes": {
+    "loinc": "5905-5",
+    "name": "Monocytes",
+    "canonical_unit": "%",
+    "aliases": ["monocytes", "monos"],
+    "ranges": {
+      "default": {"min": 2.0, "max": 10.0, "critical_low": 0.5, "critical_high": 20.0}
+    },
+    "description": "Immune cells that clean up damaged tissues"
+  },
+  "eosinophils": {
+    "loinc": "711-2",
+    "name": "Eosinophils",
+    "canonical_unit": "%",
+    "aliases": ["eosinophils", "eos"],
+    "ranges": {
+      "default": {"min": 1.0, "max": 6.0, "critical_low": 0.0, "critical_high": 25.0}
+    },
+    "description": "White cells associated with allergies and parasitic defense"
+  },
+  "basophils": {
+    "loinc": "704-7",
+    "name": "Basophils",
+    "canonical_unit": "%",
+    "aliases": ["basophils", "basos"],
+    "ranges": {
+      "default": {"min": 0.0, "max": 2.0, "critical_low": 0.0, "critical_high": 10.0}
+    },
+    "description": "White blood cells releasing histamine during allergies"
+  },
+  "esr": {
+    "loinc": "22322-2",
+    "name": "Erythrocyte Sedimentation Rate (ESR)",
+    "canonical_unit": "mm/hr",
+    "aliases": ["esr", "sed rate"],
+    "ranges": {
+      "male": {"min": 0.0, "max": 15.0, "critical_low": 0.0, "critical_high": 100.0},
+      "female": {"min": 0.0, "max": 20.0, "critical_low": 0.0, "critical_high": 100.0},
+      "default": {"min": 0.0, "max": 20.0, "critical_low": 0.0, "critical_high": 100.0}
+    },
+    "description": "Nonspecific marker of inflammation in the body"
+  },
+  "fasting_blood_glucose": {
+    "loinc": "1558-6",
+    "name": "Fasting Blood Sugar (Glucose)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["fbs", "fasting blood glucose", "fasting blood sugar", "glucose fasting", "fbs glucose"],
+    "ranges": {
+      "default": {"min": 70.0, "max": 99.0, "critical_low": 50.0, "critical_high": 350.0}
+    },
+    "description": "Blood glucose after overnight fasting"
+  },
+  "postprandial_blood_glucose": {
+    "loinc": "1521-4",
+    "name": "Post Prandial Blood Sugar (PPBS)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["ppbs", "post prandial glucose", "pp blood sugar", "glucose pp", "2 hour pp glucose"],
+    "ranges": {
+      "default": {"min": 70.0, "max": 140.0, "critical_low": 50.0, "critical_high": 400.0}
+    },
+    "description": "Blood glucose 2 hours after a meal"
+  },
+  "random_blood_glucose": {
+    "loinc": "2345-7",
+    "name": "Random Blood Sugar (RBS)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["rbs", "random blood glucose", "glucose random"],
+    "ranges": {
+      "default": {"min": 70.0, "max": 140.0, "critical_low": 50.0, "critical_high": 400.0}
+    },
+    "description": "Blood glucose checked at any unscheduled time"
+  },
+  "hba1c": {
+    "loinc": "4548-4",
+    "name": "Glycated Hemoglobin (HbA1c)",
+    "canonical_unit": "%",
+    "aliases": ["hba1c", "glycated hemoglobin", "glycosylated hemoglobin", "a1c"],
+    "ranges": {
+      "default": {"min": 4.0, "max": 5.6, "critical_low": 3.0, "critical_high": 11.0}
+    },
+    "description": "Average blood sugar control over the past 2 to 3 months"
+  },
+  "total_cholesterol": {
+    "loinc": "2093-3",
+    "name": "Total Cholesterol",
+    "canonical_unit": "mg/dL",
+    "aliases": ["serum cholesterol", "cholesterol total", "total cholesterol"],
+    "ranges": {
+      "default": {"min": 125.0, "max": 200.0, "critical_low": 90.0, "critical_high": 350.0}
+    },
+    "description": "Total amount of cholesterol in blood"
+  },
+  "triglycerides": {
+    "loinc": "2571-8",
+    "name": "Serum Triglycerides",
+    "canonical_unit": "mg/dL",
+    "aliases": ["triglycerides", "tg", "serum triglycerides"],
+    "ranges": {
+      "default": {"min": 50.0, "max": 150.0, "critical_low": 20.0, "critical_high": 500.0}
+    },
+    "description": "Type of fat in blood stored in fat cells"
+  },
+  "hdl_cholesterol": {
+    "loinc": "2085-9",
+    "name": "HDL Cholesterol (Good)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["hdl", "hdl cholesterol", "high density lipoprotein"],
+    "ranges": {
+      "male": {"min": 40.0, "max": 80.0, "critical_low": 20.0, "critical_high": 120.0},
+      "female": {"min": 50.0, "max": 90.0, "critical_low": 20.0, "critical_high": 120.0},
+      "default": {"min": 40.0, "max": 85.0, "critical_low": 20.0, "critical_high": 120.0}
+    },
+    "description": "Protective cholesterol removing fat from arteries"
+  },
+  "ldl_cholesterol": {
+    "loinc": "13457-7",
+    "name": "LDL Cholesterol (Calculated)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["ldl", "ldl cholesterol", "low density lipoprotein"],
+    "ranges": {
+      "default": {"min": 50.0, "max": 100.0, "critical_low": 30.0, "critical_high": 220.0}
+    },
+    "description": "Cholesterol that deposits plaque in blood vessels"
+  },
+  "vldl_cholesterol": {
+    "loinc": "13458-5",
+    "name": "VLDL Cholesterol",
+    "canonical_unit": "mg/dL",
+    "aliases": ["vldl", "vldl cholesterol"],
+    "ranges": {
+      "default": {"min": 5.0, "max": 30.0, "critical_low": 2.0, "critical_high": 100.0}
+    },
+    "description": "Very low-density lipoprotein carrying triglycerides"
+  },
+  "serum_creatinine": {
+    "loinc": "2160-0",
+    "name": "Serum Creatinine",
+    "canonical_unit": "mg/dL",
+    "aliases": ["creatinine", "serum creatinine", "s. creatinine"],
+    "ranges": {
+      "male": {"min": 0.7, "max": 1.3, "critical_low": 0.3, "critical_high": 4.0},
+      "female": {"min": 0.6, "max": 1.1, "critical_low": 0.3, "critical_high": 4.0},
+      "default": {"min": 0.6, "max": 1.2, "critical_low": 0.3, "critical_high": 4.0}
+    },
+    "description": "Waste product filtered by kidneys; key indicator of kidney function"
+  },
+  "blood_urea": {
+    "loinc": "3094-0",
+    "name": "Blood Urea",
+    "canonical_unit": "mg/dL",
+    "aliases": ["urea", "blood urea"],
+    "ranges": {
+      "default": {"min": 15.0, "max": 40.0, "critical_low": 5.0, "critical_high": 120.0}
+    },
+    "description": "Waste product of protein digestion filtered by kidneys"
+  },
+  "bun": {
+    "loinc": "3094-0",
+    "name": "Blood Urea Nitrogen (BUN)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["bun", "urea nitrogen"],
+    "ranges": {
+      "default": {"min": 7.0, "max": 20.0, "critical_low": 3.0, "critical_high": 60.0}
+    },
+    "description": "Nitrogen in blood that comes from urea"
+  },
+  "uric_acid": {
+    "loinc": "3084-1",
+    "name": "Serum Uric Acid",
+    "canonical_unit": "mg/dL",
+    "aliases": ["uric acid", "serum uric acid"],
+    "ranges": {
+      "male": {"min": 3.4, "max": 7.0, "critical_low": 1.5, "critical_high": 12.0},
+      "female": {"min": 2.4, "max": 6.0, "critical_low": 1.5, "critical_high": 12.0},
+      "default": {"min": 2.5, "max": 6.8, "critical_low": 1.5, "critical_high": 12.0}
+    },
+    "description": "Breakdown product of purines; high levels can cause gout"
+  },
+  "sodium": {
+    "loinc": "2951-2",
+    "name": "Serum Sodium",
+    "canonical_unit": "mmol/L",
+    "aliases": ["sodium", "na", "serum na+"],
+    "ranges": {
+      "default": {"min": 135.0, "max": 145.0, "critical_low": 120.0, "critical_high": 160.0}
+    },
+    "description": "Essential electrolyte controlling fluid balance and nerve transmission"
+  },
+  "potassium": {
+    "loinc": "2823-3",
+    "name": "Serum Potassium",
+    "canonical_unit": "mmol/L",
+    "aliases": ["potassium", "k", "serum k+"],
+    "ranges": {
+      "default": {"min": 3.5, "max": 5.1, "critical_low": 2.8, "critical_high": 6.2}
+    },
+    "description": "Crucial electrolyte for cardiac rhythm and muscle function"
+  },
+  "chloride": {
+    "loinc": "2075-0",
+    "name": "Serum Chloride",
+    "canonical_unit": "mmol/L",
+    "aliases": ["chloride", "cl", "serum cl-"],
+    "ranges": {
+      "default": {"min": 96.0, "max": 106.0, "critical_low": 80.0, "critical_high": 125.0}
+    },
+    "description": "Electrolyte maintaining proper blood volume and pressure"
+  },
+  "serum_calcium": {
+    "loinc": "17861-6",
+    "name": "Serum Calcium",
+    "canonical_unit": "mg/dL",
+    "aliases": ["calcium", "serum ca", "total calcium"],
+    "ranges": {
+      "default": {"min": 8.5, "max": 10.2, "critical_low": 6.5, "critical_high": 13.0}
+    },
+    "description": "Mineral critical for bone strength and muscle contractions"
+  },
+  "bilirubin_total": {
+    "loinc": "1975-2",
+    "name": "Total Bilirubin",
+    "canonical_unit": "mg/dL",
+    "aliases": ["total bilirubin", "serum bilirubin total", "t. bilirubin"],
+    "ranges": {
+      "default": {"min": 0.2, "max": 1.2, "critical_low": 0.0, "critical_high": 15.0}
+    },
+    "description": "Yellow pigment formed during the breakdown of red blood cells"
+  },
+  "bilirubin_direct": {
+    "loinc": "1968-7",
+    "name": "Direct Bilirubin (Conjugated)",
+    "canonical_unit": "mg/dL",
+    "aliases": ["direct bilirubin", "conjugated bilirubin"],
+    "ranges": {
+      "default": {"min": 0.0, "max": 0.3, "critical_low": 0.0, "critical_high": 8.0}
+    },
+    "description": "Bilirubin processed by the liver and ready for bile excretion"
+  },
+  "sgot": {
+    "loinc": "1920-8",
+    "name": "SGOT / AST",
+    "canonical_unit": "U/L",
+    "aliases": ["sgot", "ast", "aspartate aminotransferase"],
+    "ranges": {
+      "default": {"min": 10.0, "max": 40.0, "critical_low": 5.0, "critical_high": 500.0}
+    },
+    "description": "Enzyme found in liver and heart cells; increases with cellular injury"
+  },
+  "sgpt": {
+    "loinc": "1742-6",
+    "name": "SGPT / ALT",
+    "canonical_unit": "U/L",
+    "aliases": ["sgpt", "alt", "alanine aminotransferase"],
+    "ranges": {
+      "default": {"min": 7.0, "max": 56.0, "critical_low": 5.0, "critical_high": 500.0}
+    },
+    "description": "Liver-specific enzyme indicating liver cell health"
+  },
+  "alkaline_phosphatase": {
+    "loinc": "6768-6",
+    "name": "Alkaline Phosphatase (ALP)",
+    "canonical_unit": "U/L",
+    "aliases": ["alp", "alkaline phosphatase", "alk phos"],
+    "ranges": {
+      "default": {"min": 44.0, "max": 147.0, "critical_low": 20.0, "critical_high": 600.0}
+    },
+    "description": "Enzyme related to bile ducts and bone turnover"
+  },
+  "total_protein": {
+    "loinc": "2885-2",
+    "name": "Total Protein",
+    "canonical_unit": "g/dL",
+    "aliases": ["total protein", "serum protein"],
+    "ranges": {
+      "default": {"min": 6.0, "max": 8.3, "critical_low": 4.5, "critical_high": 10.5}
+    },
+    "description": "Total amount of albumin and globulin in blood"
+  },
+  "serum_albumin": {
+    "loinc": "1751-7",
+    "name": "Serum Albumin",
+    "canonical_unit": "g/dL",
+    "aliases": ["albumin", "s. albumin"],
+    "ranges": {
+      "default": {"min": 3.5, "max": 5.0, "critical_low": 2.0, "critical_high": 6.0}
+    },
+    "description": "Major liver protein preventing fluid leakage from vessels"
+  },
+  "serum_globulin": {
+    "loinc": "2339-0",
+    "name": "Serum Globulin",
+    "canonical_unit": "g/dL",
+    "aliases": ["globulin"],
+    "ranges": {
+      "default": {"min": 2.0, "max": 3.5, "critical_low": 1.2, "critical_high": 5.5}
+    },
+    "description": "Group of proteins including antibodies and transport carriers"
+  },
+  "tsh": {
+    "loinc": "3016-3",
+    "name": "Thyroid Stimulating Hormone (TSH)",
+    "canonical_unit": "µIU/mL",
+    "aliases": ["tsh", "ultrasensitive tsh"],
+    "ranges": {
+      "default": {"min": 0.4, "max": 4.5, "critical_low": 0.05, "critical_high": 30.0}
+    },
+    "description": "Pituitary hormone stimulating thyroid gland hormone production"
+  },
+  "free_t3": {
+    "loinc": "3051-2",
+    "name": "Free Triiodothyronine (FT3)",
+    "canonical_unit": "pg/mL",
+    "aliases": ["ft3", "free t3"],
+    "ranges": {
+      "default": {"min": 2.3, "max": 4.2, "critical_low": 1.0, "critical_high": 10.0}
+    },
+    "description": "Active unbound thyroid hormone regulating metabolism"
+  },
+  "free_t4": {
+    "loinc": "3024-7",
+    "name": "Free Thyroxine (FT4)",
+    "canonical_unit": "ng/dL",
+    "aliases": ["ft4", "free t4"],
+    "ranges": {
+      "default": {"min": 0.8, "max": 1.8, "critical_low": 0.3, "critical_high": 5.0}
+    },
+    "description": "Unbound circulating thyroxine hormone"
+  },
+  "vitamin_d": {
+    "loinc": "62292-8",
+    "name": "Vitamin D (25-OH)",
+    "canonical_unit": "ng/mL",
+    "aliases": ["vitamin d", "25-hydroxy vitamin d", "vit d3", "vit d"],
+    "ranges": {
+      "default": {"min": 30.0, "max": 100.0, "critical_low": 10.0, "critical_high": 150.0}
+    },
+    "description": "Fat-soluble vitamin vital for calcium absorption and immunity"
+  },
+  "vitamin_b12": {
+    "loinc": "2132-9",
+    "name": "Vitamin B12",
+    "canonical_unit": "pg/mL",
+    "aliases": ["vitamin b12", "b12", "cyanocobalamin"],
+    "ranges": {
+      "default": {"min": 200.0, "max": 900.0, "critical_low": 100.0, "critical_high": 2000.0}
+    },
+    "description": "Essential vitamin for nerve function and red blood cell production"
+  },
+  "crp": {
+    "loinc": "1988-5",
+    "name": "C-Reactive Protein (CRP)",
+    "canonical_unit": "mg/L",
+    "aliases": ["crp", "c reactive protein"],
+    "ranges": {
+      "default": {"min": 0.0, "max": 5.0, "critical_low": 0.0, "critical_high": 100.0}
+    },
+    "description": "Liver protein synthesized rapidly in response to bodily inflammation"
+  },
+  "serum_ferritin": {
+    "loinc": "2276-4",
+    "name": "Serum Ferritin",
+    "canonical_unit": "ng/mL",
+    "aliases": ["ferritin", "serum ferritin"],
+    "ranges": {
+      "male": {"min": 24.0, "max": 336.0, "critical_low": 10.0, "critical_high": 1000.0},
+      "female": {"min": 11.0, "max": 307.0, "critical_low": 10.0, "critical_high": 1000.0},
+      "default": {"min": 20.0, "max": 300.0, "critical_low": 10.0, "critical_high": 1000.0}
+    },
+    "description": "Primary iron storage protein in bodily tissues"
+  },
+  "serum_iron": {
+    "loinc": "2498-4",
+    "name": "Serum Iron",
+    "canonical_unit": "µg/dL",
+    "aliases": ["iron", "serum iron"],
+    "ranges": {
+      "male": {"min": 65.0, "max": 175.0, "critical_low": 30.0, "critical_high": 300.0},
+      "female": {"min": 50.0, "max": 170.0, "critical_low": 30.0, "critical_high": 300.0},
+      "default": {"min": 55.0, "max": 175.0, "critical_low": 30.0, "critical_high": 300.0}
+    },
+    "description": "Circulating iron bound to transferrin in blood"
+  }
+}

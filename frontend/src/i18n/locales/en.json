@@ -1,0 +1,87 @@
+{
+  "app_name": "Altrix Health Copilot",
+  "tagline": "AI-Powered Personal Health Companion",
+  "nav": {
+    "about": "About & Overview",
+    "dashboard": "Profile & Dashboard",
+    "timeline": "Health Timeline",
+    "upload": "Upload Document",
+    "chat": "Ask Copilot",
+    "abha": "ABHA & ABDM"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "abha_id": "ABHA Number",
+    "abha_address": "ABHA Address",
+    "active_conditions": "Active Conditions",
+    "current_medicines": "Current Prescribed Medicines",
+    "latest_labs": "Latest Key Lab Results",
+    "clinical_alerts": "Clinical Health Alerts",
+    "no_alerts": "No abnormal flags or critical alerts detected. All readings within normal range.",
+    "view_timeline": "View Full Timeline",
+    "upload_new": "Upload New Record",
+    "export_fhir": "Export FHIR R4 Bundle",
+    "share_summary": "Share Summary (Print/PDF)"
+  },
+  "upload": {
+    "title": "Upload Medical Document",
+    "subtitle": "Upload prescriptions, lab reports, discharge summaries or scans (PDF, JPG, PNG)",
+    "drag_drop": "Drag & drop your file here, or click to browse",
+    "camera_btn": "Take Photo / Use Camera",
+    "step_reading": "1. Reading & Validating Document...",
+    "step_extracting": "2. Extracting Medical Entities & OCR...",
+    "step_checking": "3. Checking Reference Ranges & Flags...",
+    "step_summarizing": "4. Writing Plain-Language Medical Summary...",
+    "processing": "Processing Document...",
+    "upload_btn": "Process Document"
+  },
+  "doc_detail": {
+    "title": "Document Analysis",
+    "original_view": "Original Document",
+    "extracted_view": "Extracted Structured Data",
+    "summary_view": "Plain-Language Explanation",
+    "listen": "Listen (Audio)",
+    "stop_audio": "Stop Audio",
+    "edit_values": "Edit & Verify Values (Human-in-the-Loop)",
+    "save_edits": "Save & Re-calculate",
+    "needs_review": "Needs Review"
+  },
+  "timeline": {
+    "title": "Chronological Health Timeline",
+    "subtitle": "Unified timeline connecting hospital visits, prescriptions, and diagnostic labs",
+    "filter_all": "All Records",
+    "filter_labs": "Lab Reports",
+    "filter_prescriptions": "Prescriptions",
+    "filter_discharge": "Discharge Summaries",
+    "filter_abdm": "ABDM Imports",
+    "trend_title": "Longitudinal Lab Trends",
+    "trend_select": "Select Lab Test"
+  },
+  "chat": {
+    "title": "Ask Altrix Health Copilot",
+    "subtitle": "Grounded strictly in your medical documents. Safe, compassionate, and transparent.",
+    "placeholder": "Ask a question about your labs, medicines, or visits...",
+    "send": "Ask",
+    "suggested": "Suggested questions:",
+    "q1": "What is my latest HbA1c and how has it changed?",
+    "q2": "What are the dosage instructions for my prescribed medicines?",
+    "q3": "Can you summarize my discharge instructions?",
+    "safety_note": "Altrix Copilot does not recommend medication modifications or provide diagnoses. Always verify with your physician."
+  },
+  "abha": {
+    "title": "ABDM / ABHA Health ID",
+    "subtitle": "Ayushman Bharat Digital Mission Simulation",
+    "card_title": "ABHA Digital Health Card",
+    "create_tab": "Create Mock ABHA",
+    "link_tab": "Link & Import Records",
+    "create_btn": "Generate Simulated ABHA",
+    "link_btn": "Link with 6-Digit OTP",
+    "otp_label": "Enter 6-Digit OTP (Mock Sandbox)",
+    "otp_hint": "Enter any 6 digits for this simulated sandbox demonstration.",
+    "success_msg": "Successfully linked to ABDM Gateway. Historical records imported."
+  },
+  "footer": {
+    "disclaimer": "Not medical advice. AI can make mistakes – always verify test results and medicines with a qualified healthcare doctor.",
+    "abdm_badge": "ABDM / FHIR R4 Ready"
+  }
+}

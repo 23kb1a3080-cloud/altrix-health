@@ -1,0 +1,275 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-abdm-historical-import-ravi-kumar",
+  "type": "collection",
+  "meta": {
+    "source": "https://abdm.gov.in/sandbox/mock",
+    "lastUpdated": "2025-04-10T10:30:00Z"
+  },
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-ravi-kumar",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-ravi-kumar",
+        "identifier": [
+          {
+            "system": "https://healthid.abdm.gov.in",
+            "value": "14-8723-9182-3490"
+          },
+          {
+            "system": "https://abdm.gov.in/abha-address",
+            "value": "ravikumar@abdm"
+          }
+        ],
+        "name": [
+          {
+            "text": "Ravi Kumar"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1972-06-15"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:enc-abdm-visit-1",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc-abdm-visit-1",
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "period": {
+          "start": "2024-09-18T09:30:00Z",
+          "end": "2024-09-18T10:15:00Z"
+        },
+        "serviceProvider": {
+          "display": "Apollo Clinics, Visakhapatnam"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cond-abdm-t2d",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-abdm-t2d",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "E11",
+              "display": "Type 2 diabetes mellitus"
+            }
+          ],
+          "text": "Type 2 Diabetes Mellitus"
+        },
+        "recordedDate": "2024-09-18"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cond-abdm-htn",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-abdm-htn",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "I10",
+              "display": "Essential hypertension"
+            }
+          ],
+          "text": "Essential Hypertension"
+        },
+        "recordedDate": "2024-09-18"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-abdm-hba1c-old",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-abdm-hba1c-old",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Glycated Hemoglobin (HbA1c)"
+            }
+          ],
+          "text": "HbA1c"
+        },
+        "effectiveDateTime": "2024-09-18",
+        "valueQuantity": {
+          "value": 8.6,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "4.0 - 5.6 %"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-abdm-fbs-old",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-abdm-fbs-old",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1558-6",
+              "display": "Fasting Blood Sugar"
+            }
+          ],
+          "text": "Fasting Blood Glucose"
+        },
+        "effectiveDateTime": "2024-09-18",
+        "valueQuantity": {
+          "value": 162.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "text": "70 - 99 mg/dL"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:med-abdm-metformin-old",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "med-abdm-metformin-old",
+        "status": "active",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "763158003",
+              "display": "Metformin Hydrochloride"
+            }
+          ],
+          "text": "Metformin 500 mg"
+        },
+        "effectiveDateTime": "2024-09-18",
+        "dosage": [
+          {
+            "text": "500 mg BD (Twice daily after food)",
+            "patientInstruction": "Take after meals"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:enc-abdm-visit-2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc-abdm-visit-2",
+        "status": "finished",
+        "period": {
+          "start": "2024-06-12T11:00:00Z",
+          "end": "2024-06-12T11:45:00Z"
+        },
+        "serviceProvider": {
+          "display": "Care Hospital Health Camp, Visakhapatnam"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-abdm-rbs-camp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-abdm-rbs-camp",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7",
+              "display": "Random Blood Sugar"
+            }
+          ],
+          "text": "Random Blood Sugar"
+        },
+        "effectiveDateTime": "2024-06-12",
+        "valueQuantity": {
+          "value": 178.0,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                "code": "H",
+                "display": "High"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
