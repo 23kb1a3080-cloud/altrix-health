@@ -251,21 +251,63 @@ export const UploadView: React.FC<UploadViewProps> = ({
         <h4 className="font-bold text-xs uppercase tracking-wider text-chocolate mb-2.5">
           Demo Quick Load (Synthetic Test Documents)
         </h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-          <div className="p-2.5 rounded-lg bg-cream-light border border-latte-dark flex items-center justify-between">
-            <span className="font-medium text-chocolate-deep flex items-center">
-              <FileText className="w-4 h-4 text-caramel mr-2" />
-              doc_a_lab_report.pdf
-            </span>
-            <span className="text-[11px] text-chocolate/70">CBC + HbA1c</span>
-          </div>
-          <div className="p-2.5 rounded-lg bg-cream-light border border-latte-dark flex items-center justify-between">
-            <span className="font-medium text-chocolate-deep flex items-center">
-              <FileText className="w-4 h-4 text-caramel mr-2" />
-              doc_b_prescription.png
-            </span>
-            <span className="text-[11px] text-chocolate/70">Bilingual Rx</span>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+          <button
+            type="button"
+            disabled={isProcessing}
+            onClick={() => {
+              const file = new File(['synthetic comprehensive patient dataset'], 'sample_patient_dataset_project_testing.pdf', {
+                type: 'application/pdf',
+              })
+              setSelectedFile(file)
+              setErrorMessage(null)
+            }}
+            className="p-3 rounded-xl bg-cream-light hover:bg-latte border border-latte-dark hover:border-caramel flex flex-col justify-between text-left transition-all cursor-pointer shadow-2xs group"
+          >
+            <div className="font-medium text-chocolate-deep flex items-center group-hover:text-caramel">
+              <FileText className="w-4 h-4 text-caramel mr-1.5 shrink-0" />
+              <span className="truncate">sample_patient_dataset.pdf</span>
+            </div>
+            <span className="text-[11px] text-chocolate/70 mt-1">Full Panel (CBC + HbA1c + Rx)</span>
+          </button>
+
+          <button
+            type="button"
+            disabled={isProcessing}
+            onClick={() => {
+              const file = new File(['synthetic lab test data'], 'doc_a_lab_report.pdf', {
+                type: 'application/pdf',
+              })
+              setSelectedFile(file)
+              setErrorMessage(null)
+            }}
+            className="p-3 rounded-xl bg-cream-light hover:bg-latte border border-latte-dark hover:border-caramel flex flex-col justify-between text-left transition-all cursor-pointer shadow-2xs group"
+          >
+            <div className="font-medium text-chocolate-deep flex items-center group-hover:text-caramel">
+              <FileText className="w-4 h-4 text-caramel mr-1.5 shrink-0" />
+              <span className="truncate">doc_a_lab_report.pdf</span>
+            </div>
+            <span className="text-[11px] text-chocolate/70 mt-1">CBC + HbA1c + Lipid Panel</span>
+          </button>
+
+          <button
+            type="button"
+            disabled={isProcessing}
+            onClick={() => {
+              const file = new File(['synthetic prescription image'], 'doc_b_prescription.png', {
+                type: 'image/png',
+              })
+              setSelectedFile(file)
+              setErrorMessage(null)
+            }}
+            className="p-3 rounded-xl bg-cream-light hover:bg-latte border border-latte-dark hover:border-caramel flex flex-col justify-between text-left transition-all cursor-pointer shadow-2xs group"
+          >
+            <div className="font-medium text-chocolate-deep flex items-center group-hover:text-caramel">
+              <FileText className="w-4 h-4 text-caramel mr-1.5 shrink-0" />
+              <span className="truncate">doc_b_prescription.png</span>
+            </div>
+            <span className="text-[11px] text-chocolate/70 mt-1">Bilingual Prescription (4 Meds)</span>
+          </button>
         </div>
       </div>
     </div>
